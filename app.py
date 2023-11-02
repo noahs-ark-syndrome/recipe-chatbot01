@@ -31,10 +31,10 @@ def communicate():
 
 
 # ユーザーインターフェイスの構築
-st.title(" 新日本プロレスファンの私がレシピを考えます！")
+st.title(" 新日ファンのAIがレシピを考えます！")
 st.image("新日本プロレスファン歴40年のプロレスマニアの優秀な料理研究家.jpg")
-st.write("お好きな選手の名前を入力してください！レシピを考えます🍳\nプロレスの話をしてもいいですよ💪")
-
+st.write("お好きな選手の名前を入力してください！レシピを考えます🍳")
+st.write("プロレスの話をしてもいいですよ💪")
 user_input = st.text_input("メッセージを入力してください。", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
