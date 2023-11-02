@@ -4,7 +4,7 @@ import openai
 
 openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 
-system_prompt = chatbot_setting
+system_prompt = st.secrets.AppSettings.chatbot_setting
 
 # st.session_stateを使いメッセージのやりとりを保存
 if "messages" not in st.session_state:
